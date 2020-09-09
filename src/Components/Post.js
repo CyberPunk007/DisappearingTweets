@@ -1,22 +1,19 @@
 import React from 'react';
-import {Input , Form, Layout} from 'antd';
-
-
-const { Content } = Layout;
+import {Input , Button, Form} from 'antd';
 
 const Post = () => (
     <div>
-        <p>post works!!</p>
-        <Layout>
-            <Content margin='100px'>
-                <Form>
-                <Input margin='5px' placeholder='Type tweets in here'></Input>
+            {/* <Content margin='100px'> */}
+                <Form
+                {...layout}
+                name="basic">
                 </Form>
-            </Content>
-        </Layout>
-        
-       
-    </div>
-);
+            <Form.Item label="Tweets here">
+                <Input placeholder="What's on your mind!"/>
+            </Form.Item>
+            {/* </Content> */}
 
-export default Post
+    </div>
+    );
+
+    export default Post
