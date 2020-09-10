@@ -1,0 +1,2 @@
+export const GET_ALL_TWEETS = 'GET_ALL_TWEETS';
+export const CREATE_NEW_TWEET = 'CREATE_NEW_TWEET';

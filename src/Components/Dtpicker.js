@@ -1,6 +1,6 @@
 import moment from 'moment';
 import { DatePicker, Space } from 'antd';
-import React from 'react';
+import React, {useState} from 'react';
 
 function range(start, end) {
   const result = [];
@@ -22,9 +22,14 @@ function disabledDateTime() {
     disabledSeconds: () => [55, 56],
   };
 }
-
-const Dtpicker = () =>(
-  <Space direction="vertical" size={12}>
+function Dtpicker () {
+  const [date,setDate]=useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`time & date : ${moment}`)
+  }
+  return (
+    <Space direction="vertical" size={14}>
     <DatePicker
       format="YYYY-MM-DD HH:mm:ss"
       disabledDate={disabledDate}
@@ -32,6 +37,8 @@ const Dtpicker = () =>(
       showTime={{ defaultValue: moment('00:00:00', 'HH:mm:ss') }}
     />
   </Space>
+
   );
+}
 
 export default Dtpicker
