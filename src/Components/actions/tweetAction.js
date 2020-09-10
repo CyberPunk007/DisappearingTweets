@@ -5,4 +5,5 @@ export const createTweet = (tweet) => {
       type: actionTypes.CREATE_NEW_TWEET,
       tweet: tweet
     }
+    
   };

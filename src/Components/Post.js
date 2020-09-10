@@ -6,7 +6,6 @@ import { Button } from 'react-bootstrap';
 // import * as tweetAction from './actions/tweetAction';
 
 
-
 function Post(props) {
     const [tweet, setTweet] = useState("");
 
