@@ -16,7 +16,7 @@ function Post(props) {
         //     tweet : useState.setTweet
         // }
         // props.createTweet(tweet);
-        alert(`tweet is : ${tweet}`)
+        alert(`You tweeted : ${tweet}`)
         // alert(`tweet is : ${date}`)
     }
 
