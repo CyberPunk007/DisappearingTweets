@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Input, Form } from 'antd';
 import Dtpicker from './Dtpicker';
-import { Button } from 'react-bootstrap';
+import {Form , Input} from 'antd';
+import {Button} from "react-bootstrap";
+
 // import { connect } from 'react-redux';
 // import * as tweetAction from './actions/tweetAction';
 
@@ -29,7 +30,8 @@ function Post(props) {
                 <Input value={tweet} onChange={e => setTweet(e.target.value)} placeholder="What's on your mind!" />
             </Form.Item>
             <Form.Item>
-                <Dtpicker/><Button variant="success" type="submit" value="Post Tweet">Post Tweet</Button>
+                <Dtpicker/>
+                <Button variant="success" type="submit" value="Post Tweet">Post Tweet</Button>
             </Form.Item>
         </form>
         {/* <div>
@@ -40,8 +42,9 @@ function Post(props) {
             </div> */}
     </div>
     );
-
 }
+
+export default Post
 
 // const mapStateToProps = (tweet, props) => {
 //     return {
@@ -55,4 +58,3 @@ function Post(props) {
 //     }
 // };
 
-export default Post
